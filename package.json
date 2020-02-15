@@ -1,0 +1,16 @@
+{
+  "name": "free-gui-kit",
+  "version": "0.0.1",
+  "description": "Free GUI kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gui",
+    "ui",
+    "kit"
+  ],
+  "author": "Artem Lopatin",
+  "license": "MIT"
+}
