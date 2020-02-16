@@ -12,7 +12,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts'],
+        extensions: ['.ts', '.tsx', '.js']
     },
     output: {
         filename: 'bundle.js',
