@@ -4,7 +4,6 @@
     "sourceMap": false,
     "noImplicitAny": true,
     "esModuleInterop": true,
-    "jsxFactory": "createElement",
     "module": "commonjs",
     "target": "es6",
     "jsx": "react"
