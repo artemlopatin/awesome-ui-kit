@@ -7,7 +7,15 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./docs"
+    "docs:clear": "rimraf ./docs",
+    "docs:build": "build-storybook -o ./docs",
+    "docs:git-add": "git add ./docs",
+    "docs:refresh": "npm run docs:clear && npm run docs:build && npm run docs:git-add"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run docs:refresh"
+    }
   },
   "keywords": [
     "gui",
@@ -38,6 +46,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^4.2.3",
+    "rimraf": "^3.0.2",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5",
