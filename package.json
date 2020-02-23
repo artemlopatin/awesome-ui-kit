@@ -25,6 +25,8 @@
   "author": "Artem Lopatin",
   "license": "MIT",
   "dependencies": {
+    "@types/classnames": "^2.2.9",
+    "classnames": "^2.2.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.1"

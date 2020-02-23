@@ -1,21 +1,6 @@
-import React from 'react'
-import {ButtonSize, Props} from './types';
-import styled from 'styled-components';
-
-const getHeight = (size: ButtonSize) => {
-    switch (size) {
-        case 's':
-            return '20px';
-        case 'l':
-            return '40px';
-        default:
-            return '30px';
-    }
-};
-
-const StyledButton = styled.button<{ height: string }>`
-    height: ${(height) => height};
-`;
+import React from 'react';
+import {Props} from './types';
+import cn from 'classnames';
 
 export const Button: React.FC<Props> = (
     {
@@ -23,10 +8,10 @@ export const Button: React.FC<Props> = (
     }
 ) => {
     return (
-        <StyledButton
-            height={getHeight(size)}
+        <button
+            className={cn(`button_size_${size}`)}
         >
-            123
-        </StyledButton>
+            Button
+        </button>
     );
 };
