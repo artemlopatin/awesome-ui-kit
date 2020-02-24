@@ -1,16 +1,9 @@
-import * as React from 'react';
+import React from 'react';
 import {Button} from './';
 import {ButtonSize} from './types';
 import {storiesOf} from '@storybook/react';
 
-export default {title: 'Button'};
-
-export const button = () => (
-    <Button
-        size={ButtonSize.S}
-    />
-);
-
+// eslint-disable-next-line no-undef
 storiesOf('Button', module)
     .add('S', () => <Button
         size={ButtonSize.S}
