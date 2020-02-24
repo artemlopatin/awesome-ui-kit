@@ -1,4 +1,15 @@
+.button {
+    cursor: pointer;
+}
+
 .button_size_s {
     height: 20px;
-    min-width: 50px;
+}
+
+.button_size_m {
+    height: 30px;
+}
+
+.button_size_l {
+    height: 40px;
 }

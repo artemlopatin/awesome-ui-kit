@@ -5,9 +5,25 @@ import {storiesOf} from '@storybook/react';
 
 // eslint-disable-next-line no-undef
 storiesOf('Button', module)
-    .add('S', () => <Button
-        size={ButtonSize.S}
-    />)
+    .add('size', () => (
+        <>
+            <Button
+                size={ButtonSize.S}
+            >
+                Start
+            </Button>
+            <Button
+                size={ButtonSize.M}
+            >
+                Start
+            </Button>
+            <Button
+                size={ButtonSize.L}
+            >
+                Start
+            </Button>
+        </>
+    ))
     .add('L', () => <Button
         size={ButtonSize.L}
     />);
