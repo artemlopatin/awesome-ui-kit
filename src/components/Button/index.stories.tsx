@@ -3,7 +3,6 @@ import {Button} from './';
 import {ButtonSize} from './types';
 import {storiesOf} from '@storybook/react';
 
-// eslint-disable-next-line no-undef
 storiesOf('Button', module)
     .add('size', () => (
         <>
