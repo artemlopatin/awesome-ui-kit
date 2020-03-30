@@ -1,15 +1,33 @@
 .button {
+    box-sizing: border-box;
+    border: 2px solid;
+    background: #000066;
     cursor: pointer;
+    outline: none;
+    transition: all .4s ease;
 }
 
 .button_size_s {
     height: 20px;
+    border-radius: 4px;
 }
 
 .button_size_m {
     height: 30px;
+    border-radius: 6px;
 }
 
 .button_size_l {
     height: 40px;
+    border-radius: 8px;
+}
+
+.button_type_default {
+    color: #00ccff;
+    border-color: #0099ff;
+}
+
+.button_type_default:hover {
+    color: #99ffff;
+    border-color: #00ffff;
 }
