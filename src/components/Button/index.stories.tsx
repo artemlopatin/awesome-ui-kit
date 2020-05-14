@@ -2,10 +2,11 @@ import React from 'react';
 import {Button} from './';
 import {ButtonSize} from './types';
 import {storiesOf} from '@storybook/react';
+import {CosmosTheme} from '../../themes/cosmos';
 
 storiesOf('Button', module)
     .add('size', () => (
-        <>
+        <CosmosTheme>
             <Button
                 size={ButtonSize.S}
             >
@@ -21,8 +22,12 @@ storiesOf('Button', module)
             >
                 Start
             </Button>
-        </>
+        </CosmosTheme>
     ))
-    .add('L', () => <Button
-        size={ButtonSize.L}
-    />);
+    .add('L', () => (
+        <CosmosTheme>
+            <Button
+                size={ButtonSize.L}
+            />
+        </CosmosTheme>
+    ));
