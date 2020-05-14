@@ -1,7 +1,7 @@
 {
-  "name": "free-gui-kit",
+  "name": "awesome-ui-kit",
   "version": "0.0.1",
-  "description": "Free GUI kit",
+  "description": "Awesome UI KIT",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
