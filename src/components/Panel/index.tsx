@@ -1,17 +1,16 @@
 import React from 'react';
-import cn from 'classnames';
-import './index.css';
+import styled from 'styled-components';
 
-export const Panel: React.FC = (
-    {
-        children
-    }
-) => {
+const StyledDiv = styled.div`
+    padding: 20px;
+    border: #222222 1px solid;
+    border-radius: 8px;
+`;
+
+export const Panel: React.FC = ({children}) => {
     return (
-        <div
-            className={cn('panel')}
-        >
+        <StyledDiv>
             {children}
-        </div>
+        </StyledDiv>
     );
 };
