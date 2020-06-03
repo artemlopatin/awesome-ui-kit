@@ -49,7 +49,7 @@ export const StyledButton = styled.button<Props>`
     border-color: #0099ff;
     
     height: ${p => getHeight(p.size)};
-    border-radius:${p => getBorderRadius(p.size)};
+    border-radius: ${p => getBorderRadius(p.size)};
     
     font-size: ${p => getFontSize(p.size)};
 
