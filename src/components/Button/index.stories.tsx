@@ -28,6 +28,8 @@ storiesOf('Button', module)
         <CosmosTheme>
             <Button
                 size={ButtonSize.L}
-            />
+            >
+                Button
+            </Button>
         </CosmosTheme>
     ));

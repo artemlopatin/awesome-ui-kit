@@ -4,6 +4,11 @@ export const CssVar = {
         main: '--color_main',
     },
     backgroundColor: {
-        main: '--color_main',
-    }
+        main: '--background-color_main',
+    },
+    fontSize: {
+        s: '--font-size_s',
+        m: '--font-size_m',
+        l: '--font-size_l',
+    },
 };

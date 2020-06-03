@@ -24,6 +24,17 @@ const getBorderRadius = (size: ButtonSize) => {
     }
 };
 
+const getFontSize = (size: ButtonSize) => {
+    switch (size) {
+        case ButtonSize.S:
+            return `var(${CssVar.fontSize.s});`;
+        case ButtonSize.M:
+            return `var(${CssVar.fontSize.m});`;
+        case ButtonSize.L:
+            return `var(${CssVar.fontSize.l});`;
+    }
+};
+
 export const StyledButton = styled.button<Props>`
     box-sizing: border-box;
     border: 2px solid;
@@ -31,12 +42,16 @@ export const StyledButton = styled.button<Props>`
     cursor: pointer;
     outline: none;
     transition: all .4s ease;
+    
+    padding: 0 20px;
 
     color: var(${CssVar.color.main});
     border-color: #0099ff;
     
     height: ${p => getHeight(p.size)};
     border-radius:${p => getBorderRadius(p.size)};
+    
+    font-size: ${p => getFontSize(p.size)};
 
     :hover {
         color: #99ffff;
