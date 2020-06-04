@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run docs:refresh"
+      "pre-commit": "echo 'npm run docs:refresh'"
     }
   },
   "keywords": [
