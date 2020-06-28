@@ -1,4 +1,4 @@
 export {Button} from './button';
 export {Panel} from './panel';
-export {Picker} from './picker';
+export {Touchpad} from './touchpad';
 export {Wrapper} from './wrapper';

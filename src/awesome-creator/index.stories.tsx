@@ -1,13 +1,19 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import {CosmosTheme} from '../themes/cosmos';
-import {Button, Panel, Wrapper} from '../components';
+import {Button, Panel, Touchpad, Wrapper} from '../components';
 import {ButtonSize} from '../components/button/types';
 import {StyledButtonsWrapper} from './styled';
 
 storiesOf('Awesome Creator', module)
     .add('wizard', () => (
         <CosmosTheme>
+            <Touchpad
+                onMouseMove={console.log}
+                onClick={console.log}
+            >
+                123
+            </Touchpad>
             <Panel>
                 <StyledButtonsWrapper>
                     <Wrapper
